@@ -21,12 +21,13 @@ int recursive(int arr[],int weight[],int volume[],int N,int totalWeight,int tota
 
 int main()
 {
-    int arr[7]={1,3,10,4,5,6};
-    int weight[7]={2,1,3,4,5,6};
-    int volume[7]={2,1,3,4,5,6};
-    int weightLimit = 10;
-    int volumeLimit = 15;
-    int size = 6;
+
+    int arr[7]={5,10};
+    int weight[7]={10,10};
+    int volume[7]={10,10};
+    int weightLimit = 40;
+    int volumeLimit = 40;
+    int size = 2;
     v<v<v<int>>> memo(size+1,v<v<int>>(weightLimit+1,v<int>(volumeLimit+1,0)));
     v<v<int>> memo1(weightLimit+1,v<int>(volumeLimit+1,0));
     v<v<int>> memo2(weightLimit+1,v<int>(volumeLimit+1,0));
@@ -40,7 +41,7 @@ int main()
             {
                 if(j>=weight[i-1]&&k>=volume[i-1])
                 {
-                    memo1[j][k] = std::max(arr[i-1]+memo2[j-weight[i-1]][k-volume[i-1]], memo1[j][k]);
+                    memo1[j][k] = std::max(arr[i-1]+memo1[j-weight[i-1]][k-volume[i-1]], memo1[j][k]);
                 }
             }
 
