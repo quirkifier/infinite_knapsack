@@ -1,0 +1,3 @@
+/home/greninja/CLionProjects/zainTeaching/infiniteKnapsack/cmake-build-debug/CMakeFiles/infiniteKnapsack.dir
+/home/greninja/CLionProjects/zainTeaching/infiniteKnapsack/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/greninja/CLionProjects/zainTeaching/infiniteKnapsack/cmake-build-debug/CMakeFiles/rebuild_cache.dir
