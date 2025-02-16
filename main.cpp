@@ -44,17 +44,6 @@ int main()
                     memo1[j][k] = std::max(arr[i-1]+memo1[j-weight[i-1]][k-volume[i-1]], memo1[j][k]);
                 }
             }
-
-            ref (l,0,weightLimit)
-            {
-                ref (m,0,volumeLimit)
-                {
-                    std::cout<<memo1[l][m]<<" ";
-                    memo2[l][m]=memo1[l][m];
-                }
-                std::cout<<"\n";
-            }
-            std::cout<<"\n";
           }
         }
     std::cout<<memo1[weightLimit][volumeLimit]<<"\n";
